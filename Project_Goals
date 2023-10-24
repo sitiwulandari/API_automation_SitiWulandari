@@ -1,0 +1,35 @@
+#Create User Goals
+
+Create User Record and validate valid create Response code
+Create User Record and validate response body and verify unique user Id is present
+Create same user once again and validate the response code and response body(duplicate check)
+
+#Get User Goals
+
+Fetch User details and Print only Female users who are in active status (https://gorest.co.in/public/v2/users?gender=female&status=active)
+Fetch User details and Print only Male users who are in inactive status (https://gorest.co.in/public/v2/users?gender=male&status=inactive)
+Fetch User details and Print User IDs for users who are having email Id ends with ".test" (https://gorest.co.in/public/v2/users?email=.test)
+Provide invalid or Incorrect ID value as Param and validate the response code and Response body
+Fetch User details and validate Response body contains five fields for each user record and all five fields are having values
+
+#Update User Goals
+
+Update your user status from active to inactive. add assertions to validate successful response code and response body
+
+#Delete User Goals
+
+Delete your user record and verify the response code and response messages using assertions
+Try to Delete the user by providing incorrect/not available user Id and validate the response code and response messages using assertions
+
+#Optional goals
+
+Store all fields and getter and setter methods of Payload / Schema as POJO classes
+Use JSONPath library to query and manipulate JSON documents. Have a custom function to parse JSON.
+Generate and Store logs
+Use ENUM to handle APIs with different resources
+Read all Project level generic information from Properties file
+Write all test level information to a configuration file so the context and data is shared across.
+Build Test Data Builder class to store test data structure for test cases
+Group scenarios using tags
+Generate Reports (Requires the framework to be run through CLI - mvn test verify)
+

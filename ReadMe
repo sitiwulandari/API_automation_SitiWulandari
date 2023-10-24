@@ -1,0 +1,22 @@
+Key Notes:
+
+This automation framework uses the Rest Assured Java library to test Rest APIs.
+JUnit 4 is the chosen unit testing framework.
+Cucumber is used to run the framework in a behavior-driven development model.
+
+To execute the framework, you will need the following dependencies:
+Java
+Maven
+Rest Assured
+JUnit 4
+Cucumber 
+
+The test cases are written in feature files, which describe the expected behavior of the API.
+The code implementation is performed in step definition files.
+The test runner is used to execute the project. It reads the feature files and step definition files, and then executes the tests.
+To generate Test Reports, it requires running the project in CLI mode using 'mvn test verify' as this ensures
+that all of the tests are executed and that the reports are generated correctly.
+
+***Final Note***
+Recommend reading the project goals file. It contains important information about the scope of the tests in 
+this framework and other features that can make testing and debugging easier.

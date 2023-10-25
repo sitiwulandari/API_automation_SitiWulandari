@@ -5,7 +5,7 @@ Feature: Test the Create User API functionality of GORest website
 	Given Create User API Information
 	When User calls the "CreateUserAPI" using "POST" http method
 	Then The API call is sucessful with response code 201	
-	And The value "email" in response is shown as "test7007@gmail.com"
+	And The value "email" in response is shown as "damararya222@gmail.com"
 	And The value "status" in response is shown as "active"
 	And The Userid and Useremail are stored for furture utilization	
 	

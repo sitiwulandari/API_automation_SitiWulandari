@@ -1,10 +1,10 @@
-Request method:	POST
-Request URI:	https://gorest.co.in/public/v2/users
+Request method:	PUT
+Request URI:	https://gorest.co.in/public/v2/users/5468610
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	<none>
+Path params:	userId=5468610
 Headers:		Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -15,14 +15,15 @@ Body:
     "name": "Shiva S Bharadwaj",
     "email": "test7007@gmail.com",
     "gender": "male",
-    "status": "active"
+    "status": "inactive"
 }
-HTTP/1.1 422 Unprocessable Entity
-Date: Tue, 24 Oct 2023 01:16:31 GMT
+HTTP/1.1 200 OK
+Date: Tue, 24 Oct 2023 23:35:45 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Cache-Control: no-cache
+Cache-Control: max-age=0, private, must-revalidate
+etag: W/"3313a37c64d5c0eb1ed65d532311f431"
 referrer-policy: strict-origin-when-cross-origin
 vary: Origin
 x-content-type-options: nosniff
@@ -30,21 +31,23 @@ x-download-options: noopen
 x-frame-options: SAMEORIGIN
 x-permitted-cross-domain-policies: none
 x-ratelimit-limit: 90
-x-ratelimit-remaining: 88
+x-ratelimit-remaining: 89
 x-ratelimit-reset: 1
-x-request-id: 209f5b2b-0766-4d07-86fd-e9e922da73b9
-x-runtime: 0.082213
+x-request-id: 17daf6e9-f585-4f90-8114-a9cc9158c4dc
+x-runtime: 0.081486
 x-xss-protection: 0
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=DcZsfIU11kAZQoL1cRG4YWXL54xURNPlJCQf9lZSJbO5PDqv0whxVqKG%2FPLQw3Ou18u8kec2EZ5vwJwpOmUzVfln3shfmduMrddZEOhzGgaHFO3s6nY%2FrjJGIvRmrhg%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2BdrXvRHRWsrvSojCuHyk1USYzNZOLWRu3Msdl3trhW2TqBCNLdQCGGGkYDODGGVElrlEfED1lhvdc9qNzptg9qIx9HOmHrx6OoBNCLgxrAFzsC6egkgPKmCaBdtxrJ0%3D"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 81ae5ff6fe9d6038-SIN
+CF-RAY: 81b609bb5f203573-CGK
+Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400
 
-[
-    {
-        "field": "email",
-        "message": "has already been taken"
-    }
-]
+{
+    "email": "test7007@gmail.com",
+    "name": "Shiva S Bharadwaj",
+    "gender": "male",
+    "status": "inactive",
+    "id": 5468610
+}

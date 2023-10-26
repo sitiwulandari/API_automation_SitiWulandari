@@ -1,53 +1,57 @@
-Request method:	PUT
-Request URI:	https://gorest.co.in/public/v2/users/5468610
+Request method:	GET
+Request URI:	https://gorest.co.in/public/v2/users?gender=male&status=inactive&per_page=1
 Proxy:			<none>
 Request params:	<none>
-Query params:	<none>
+Query params:	gender=male
+				status=inactive
+				per_page=1
 Form params:	<none>
-Path params:	userId=5468610
+Path params:	<none>
 Headers:		Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
-Body:
-{
-    "id": "707",
-    "name": "Shiva S Bharadwaj",
-    "email": "test7007@gmail.com",
-    "gender": "male",
-    "status": "inactive"
-}
+Body:			<none>
 HTTP/1.1 200 OK
-Date: Tue, 24 Oct 2023 23:35:45 GMT
+Date: Thu, 26 Oct 2023 09:38:34 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 Cache-Control: max-age=0, private, must-revalidate
-etag: W/"3313a37c64d5c0eb1ed65d532311f431"
+etag: W/"1702b0d371f485dde6779b8dba1cc74c"
 referrer-policy: strict-origin-when-cross-origin
 vary: Origin
 x-content-type-options: nosniff
 x-download-options: noopen
 x-frame-options: SAMEORIGIN
+x-links-current: https://gorest.co.in/public/v2/users?page=1
+x-links-next: https://gorest.co.in/public/v2/users?page=2
+x-links-previous: 
+x-pagination-limit: 10
+x-pagination-page: 1
+x-pagination-pages: 76
+x-pagination-total: 753
 x-permitted-cross-domain-policies: none
 x-ratelimit-limit: 90
 x-ratelimit-remaining: 89
 x-ratelimit-reset: 1
-x-request-id: 17daf6e9-f585-4f90-8114-a9cc9158c4dc
-x-runtime: 0.081486
+x-request-id: 22bcee5e-e9d9-4435-9a6c-23d7d78c6f70
+x-runtime: 0.083066
 x-xss-protection: 0
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2BdrXvRHRWsrvSojCuHyk1USYzNZOLWRu3Msdl3trhW2TqBCNLdQCGGGkYDODGGVElrlEfED1lhvdc9qNzptg9qIx9HOmHrx6OoBNCLgxrAFzsC6egkgPKmCaBdtxrJ0%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=VQBiMNv7%2FjpVisu0Yfcen8%2Flcv9olX9iRXvAKEyHCaJ07J8c8qAniwC8CLtARQmJLZjd9EKnjQhXLmd0xoxBm5q31fchmyWlAg320oNUb9l02HRJY0jHLBHYEYQkXwc%3D"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 81b609bb5f203573-CGK
+CF-RAY: 81c1ba22be3b509c-HKG
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400
 
-{
-    "email": "test7007@gmail.com",
-    "name": "Shiva S Bharadwaj",
-    "gender": "male",
-    "status": "inactive",
-    "id": 5468610
-}
+[
+    {
+        "id": 5507780,
+        "name": "Sarada Bhat",
+        "email": "bhat_sarada@boyer.test",
+        "gender": "male",
+        "status": "inactive"
+    }
+]

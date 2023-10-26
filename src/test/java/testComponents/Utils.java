@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Properties;
 
+import io.cucumber.java.PendingException;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
@@ -17,7 +18,7 @@ public class Utils {
 	
 		public static RequestSpecification baserequest;
 	
-		public RequestSpecification requestSpecification() throws IOException {	
+		public RequestSpecification requestSpecification() throws IOException {
 		if(baserequest==null) {
 		PrintStream logs = new PrintStream(new FileOutputStream("Complete_Logs.txt"));
 		baserequest = new RequestSpecBuilder().setBaseUri(getGlobalValue("baseURI")).
@@ -28,6 +29,7 @@ public class Utils {
 		}
 		return baserequest;
 		}
+
 		
 		public String getGlobalValue(String key) throws IOException {
 		Properties prop = new Properties();
@@ -48,5 +50,5 @@ public class Utils {
 		JsonPath js = new JsonPath(responsestg);
 		return js.getString(key);			
 		}
-		
+
 }

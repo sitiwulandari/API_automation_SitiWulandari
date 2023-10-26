@@ -45,7 +45,6 @@ public class StepDefinitions extends Utils{
 	if(method.equalsIgnoreCase("GET")) {
 		response = request.when().get(resourceAPI.getResource());
 	}
-	
 	else if(method.equalsIgnoreCase("POST")) {
 		response = request.when().post(resourceAPI.getResource());
 	}
@@ -186,5 +185,22 @@ public class StepDefinitions extends Utils{
 	}
 
 
+	@Given("Creates a user post")
+	public void createsAUserPost() throws IOException {
+		request = given().spec(requestSpecification()).auth().oauth2("8e864ebe0435372bd5e1ff3a1c85dedf12a020ebf10e53f5bb975cdc429f9b63").
+				pathParam("userId", getDynamicValue("userId")).body(testdata.createUserPostPayload());
+	}
 
+	@Given("Creates a user post comment")
+	public void createsAUserPostComment() throws IOException{
+		request = given().spec(requestSpecification()).auth().oauth2("8e864ebe0435372bd5e1ff3a1c85dedf12a020ebf10e53f5bb975cdc429f9b63").
+				pathParam("userId", getDynamicValue("userId")).body(testdata.createPostCommentPayload());
+
+	}
+	@Given("Create a User Todo API Information")
+	public void createAUserTodoAPIInformation() throws IOException{
+		request = given().spec(requestSpecification()).auth().oauth2("8e864ebe0435372bd5e1ff3a1c85dedf12a020ebf10e53f5bb975cdc429f9b63").
+				pathParam("userId", getDynamicValue("userId")).body(testdata.createUserTodoPayload());
+
+	}
 }
